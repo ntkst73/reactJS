@@ -19,6 +19,10 @@ a {
     display: block;
 }
 
+.city {
+    margin-right: 10px;
+}
+
 .btn {
     width: 220px;
     height: 65px;

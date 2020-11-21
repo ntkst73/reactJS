@@ -18,7 +18,6 @@ const Footer = () => {
                     <div class="subtitle">Или позвоните нам</div>
                     <Link text='+380678341034' classes='link'/>
                     <Link text='+380500941356' classes='link'/>
-                   
                 </div>
             </div>
         </footer>

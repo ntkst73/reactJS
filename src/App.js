@@ -10,6 +10,7 @@ import Promotion from './components/promotion/promotion.jsx';
 import Modal from './components/Modal/modal.jsx';
 import Divider from './components/divider/divider.jsx';
 import Menu from './components/Menu/menu.jsx';
+import {BrowserRouter, Route} from 'react-router-dom';
 
 import slider1 from './assets/images/slider/food-12.jpg';
 import slider2 from './assets/images/slider/olive-oil.jpg';
@@ -28,12 +29,16 @@ import icon6 from './assets/icons/right.svg';
 import icon7 from './assets/icons/switch.svg';
 import icon8 from './assets/icons/veg.svg';
 import spinner from './assets/icons/spinner.svg';
+import Ulsk from './components/ulsk/ulsk';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <SidePanel />
+      <BrowserRouter>
+          <Route path='/moskow' component={SidePanel}/>
+          <Route path='/ulsk' component={Ulsk}/>
+      </BrowserRouter>
       <Preview />
       <Divider />
       <Offer />
@@ -43,7 +48,8 @@ function App() {
       <Order />
       <Divider />
       <Promotion />
-      <Footer />
+      <Footer>
+      </Footer>
       <Modal />
       <Divider />
 
