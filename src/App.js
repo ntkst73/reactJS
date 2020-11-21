@@ -1,15 +1,15 @@
 import './App.css';
-import Header from './components/header';
-import SidePanel from './components/sidePanel';
-import Preview from './components/preview';
-import Offer from './components/offer';
-import Calculating from './components/calculating';
-import Footer from './components/footer';
-import Order from './components/order';
-import Promotion from './components/promotion';
-import Modal from './components/modal';
-import Divider from './components/divider';
-import Menu from './components/menu';
+import Header from './components/Header/header.jsx';
+import SidePanel from './components/SlidePanel/sidePanel.jsx';
+import Preview from './components/preview/preview.jsx';
+import Offer from './components/Offer/offer.jsx';
+import Calculating from './components/calculating/calculating.jsx';
+import Footer from './components/Footer/footer.jsx';
+import Order from './components/Order/order.jsx';
+import Promotion from './components/promotion/promotion.jsx';
+import Modal from './components/Modal/modal.jsx';
+import Divider from './components/divider/divider.jsx';
+import Menu from './components/Menu/menu.jsx';
 
 import slider1 from './assets/images/slider/food-12.jpg';
 import slider2 from './assets/images/slider/olive-oil.jpg';

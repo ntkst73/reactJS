@@ -1,3 +1,5 @@
+import React from 'react';
+import Link from '../Link/link';
 const Header = () => {
     return (
         <header class="header">
@@ -6,8 +8,8 @@ const Header = () => {
                     <img src="assets/icons/logo.svg" alt="Логотип"></img>
                 </div>
                 <nav class="header__links">
-                    <a href="#" class="header__link">Доставка питания</a>
-                    <a href="#" class="header__link">Второй пункт</a>
+                    <Link text='Доставка питания' classes='header__link'/>
+                    <Link text='Второй пункт' classes='header__link'/>
                 </nav>
             </div>
             <div class="header__right-block">
