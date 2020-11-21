@@ -11,6 +11,7 @@ import Modal from './components/Modal/modal.jsx';
 import Divider from './components/divider/divider.jsx';
 import Menu from './components/Menu/menu.jsx';
 import {BrowserRouter, Route} from 'react-router-dom';
+import {NavLink} from "react-router-dom";
 
 import slider1 from './assets/images/slider/food-12.jpg';
 import slider2 from './assets/images/slider/olive-oil.jpg';
@@ -36,6 +37,8 @@ function App() {
     <div className="App">
       <Header />
       <BrowserRouter>
+      <NavLink to="/ulsk">Ульяновск</NavLink>
+      <NavLink to="/moskow">Москва</NavLink>
           <Route path='/moskow' component={SidePanel}/>
           <Route path='/ulsk' component={Ulsk}/>
       </BrowserRouter>
