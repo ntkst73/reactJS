@@ -2,13 +2,13 @@ import React from 'react';
 
 const SidePanel = () => {
     return (
-        <div class="sidepanel">
-            <div class="sidepanel__text"><span>Социальные сети</span></div>
-            <div class="sidepanel__divider"></div>
-            <a href="#" class="sidepanel__icon">
+        <div className="sidepanel">
+            <div className="sidepanel__text"><span>Социальные сети</span></div>
+            <div className="sidepanel__divider"></div>
+            <a href="#" className="sidepanel__icon">
                 <img src="assets/icons/instagram.svg" alt="instagram"></img>
             </a>
-            <a href="#" class="sidepanel__icon">
+            <a href="#" className="sidepanel__icon">
                 <img src="assets/icons/facebook.svg" alt="facebook"></img>
             </a>
         </div>

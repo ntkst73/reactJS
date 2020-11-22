@@ -25,24 +25,24 @@ const Menu = () => {
     ];
 
     let menuCardsRender = menuCards.map(card => 
-        <div class="menu__item">
+        <div className="menu__item">
             <img src={card.src} alt={card.alt}></img>
-            <h3 class="menu__item-subtitle">{card.title}</h3>
-            <div class="menu__item-descr">{card.desc}</div>
-            <div class="menu__item-divider"></div>
-            <div class="menu__item-price">
-                <div class="menu__item-cost">Цена:</div>
-                <div class="menu__item-total"><span>{card.price}</span> дол/день</div>
+            <h3 className="menu__item-subtitle">{card.title}</h3>
+            <div className="menu__item-descr">{card.desc}</div>
+            <div className="menu__item-divider"></div>
+            <div className="menu__item-price">
+                <div className="menu__item-cost">Цена:</div>
+                <div className="menu__item-total"><span>{card.price}</span> дол/день</div>
             </div>
         </div>
     )
 
 
     return (
-        <div class="menu">
-            <h2 class="title">Наше меню на день</h2>
-            <div class="menu__field">
-                <div class="container js-container">
+        <div className="menu">
+            <h2 className="title">Наше меню на день</h2>
+            <div className="menu__field">
+                <div className="container js-container">
                     {menuCardsRender}
                 </div>
             </div>
