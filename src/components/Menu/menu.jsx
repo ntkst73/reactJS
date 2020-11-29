@@ -1,30 +1,5 @@
-const Menu = () => {
-
-    let menuCards = [
-        {
-            src: 'assets/images/tabs/vegy.jpg',
-            alt: 'vegu',
-            title: 'Меню "Фитнес"',
-            desc: 'Меню "Фитнес" - это новый подход к приготовлению блюд: больше свежих овощей и фруктов. Продукт активных и здоровых людей. Это абсолютно новый продукт с оптимальной ценой и высоким качеством!"',
-            price: 9,
-        },
-        {
-            src: 'assets/images/tabs/elite.jpg',
-            alt: 'premium',
-            title: 'Меню "Премиум"',
-            desc: 'В меню “Премиум” мы используем не только красивый дизайн упаковки, но и качественное исполнение блюд. Красная рыба, морепродукты, фрукты - ресторанное меню без похода в ресторан!',
-            price: 12,
-        },
-        {
-            src: 'assets/images/tabs/post.jpg',
-            alt: 'postnoe',
-            title: 'Меню "Постное"',
-            desc: 'Меню “Постное” - это тщательный подбор ингредиентов: полное отсутствие продуктов животного происхождения, молоко из миндаля, овса, кокоса или гречки, правильное количество белков за счет тофу и импортных вегетарианских стейков.',
-            price: 16
-        }
-    ];
-
-    let menuCardsRender = menuCards.map(card => 
+const Menu = (props) => {
+    let menuCardsRender = props.menuCards.map(card => 
         <div className="menu__item">
             <img src={card.src} alt={card.alt}></img>
             <h3 className="menu__item-subtitle">{card.title}</h3>

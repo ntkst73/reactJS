@@ -32,30 +32,32 @@ import icon8 from './assets/icons/veg.svg';
 import spinner from './assets/icons/spinner.svg';
 import Ulsk from './components/ulsk/ulsk';
 
-function App() {
+
+
+function App(props) {
   return (
     <div className="App">
-      <Header />
       <BrowserRouter>
-      <NavLink to="/ulsk">Ульяновск</NavLink>
-      <NavLink to="/moskow">Москва</NavLink>
-          <Route path='/moskow' component={SidePanel}/>
-          <Route path='/ulsk' component={Ulsk}/>
+        <Header />
+        <NavLink to="/ulsk">Ульяновск</NavLink>
+        <NavLink to="/moskow">Москва</NavLink>
+            <Route path='/moskow' component={SidePanel}/>
+            <Route path='/ulsk' component={Ulsk}/>
+            {/* <Route path='/ulsk' render={ () => <Ulsk /> } //для передачи props */}
+        <Preview />
+        <Divider />
+        <Offer />
+        <Divider />
+        <Calculating />
+        <Menu menuCards = {props.appState.menuCards} />
+        <Order />
+        <Divider />
+        <Promotion />
+        <Footer>
+        </Footer>
+        <Modal />
+        <Divider />
       </BrowserRouter>
-      <Preview />
-      <Divider />
-      <Offer />
-      <Divider />
-      <Calculating />
-      <Menu />
-      <Order />
-      <Divider />
-      <Promotion />
-      <Footer>
-      </Footer>
-      <Modal />
-      <Divider />
-
 
     </div>
   );

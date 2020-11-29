@@ -646,7 +646,21 @@ a {
 }
 
 .footer .subtitle {
-    font-size: 20px
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+button.subtitle {
+    width: 200px;
+    background: #fff;
+    color: #303030;
+    border-radius: 10px;
+    border: 1px solid  #303030;
+}
+
+button.subtitle:hover {
+    background: lightseagreen;
+    cursor: pointer;
 }
 
 .footer .link {
